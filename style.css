@@ -1,0 +1,686 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+
+header {
+  height: 850px;
+  font-size: 70px;
+  padding-top: 4%;
+  padding-bottom: 0;
+  /*background-image:url('background.png');*/
+  background-color: rgb(223, 238, 234);
+}
+
+.tagline
+{
+  width:75%;
+  text-align:center;
+  overflow:hidden;
+  background-color:rgb(94, 139, 126);
+  font-family: 'Bevan', cursive;
+  font-size:20px;
+  position:absolute;
+  margin-left:160px;
+  margin-top:-100px;
+}
+.headContainer {
+  width: 90%;
+  padding-left: 10%;
+  background-color: rgba(206, 240, 231, 0.858);
+}
+
+.headContainer2 {
+  display: block;
+  width: 80%;
+  margin-left: 10%;
+  height: 40%;
+  overflow: hidden;
+}
+
+.content_img {
+  position: relative;
+  width: 250px;
+  height: 240px;
+  float: left;
+  margin-right: 40px;
+  margin-top: 40px;
+  margin-left: 120px;
+}
+
+/* Child Text Container */
+.content_img div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgb(47, 93, 98);
+  color: white;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  font-size: 30px;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  font-weight: bold;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img div > p {
+  padding: 10px;
+}
+
+/* Hover on Parent Container */
+.content_img:hover {
+  cursor: pointer;
+}
+
+.content_img:hover div {
+  width: 200px;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 5px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+.headContainer > img {
+  width: 35%;
+  float: left;
+  padding-left: 20px;
+}
+.headContainer > p {
+  width: 45%;
+  height: 260px;
+  padding-left: 60px;
+  padding-top: 80px;
+  font-size: 85px;
+  overflow: hidden;
+  font-family: "Zen Tokyo Zoo", cursive;
+  color: rgb(47, 93, 98);
+}
+
+p {
+  font-size: 18px;
+}
+
+nav {
+  /*display: flex;*/
+  overflow: hidden;
+  background-color: rgb(47, 93, 98);
+  color: black;
+  padding-left: 30px;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  float: left;
+  display:block;
+  text-align:center;
+}
+
+.border {
+  border-bottom: 8px solid rgb(167, 196, 188);
+}
+
+
+nav li a{
+  width: 130px;
+  margin-left: 15px;
+  padding-top:-25px;
+  color: white;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+
+nav li:hover {
+  background-color: rgba(198, 242, 230, 0.774);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+p > a {
+  color: white;
+  font-size: 30px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 60px;
+}
+
+.lifes,
+.sport,
+.con {
+  height: 840px;
+  padding-left: 60px;
+  background-color: rgb(198, 242, 230);
+  padding-top: 120px;
+  font-family: "Syncopate", sans-serif;
+}
+
+.lifes > p > a,
+.sport > p > a,
+.con > p > a {
+  font-size: 50px;
+  color: rgb(94, 139, 126);
+}
+
+.abouts,
+.busi {
+  background-color: rgba(94, 139, 126);
+  height: 800px;
+  padding-top: 120px;
+  padding-left: 60px;
+  font-family: "Syncopate", sans-serif;
+}
+
+.abouts > p > a,
+.busi > p > a {
+  font-size: 50px;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(47, 93, 98);
+  color: white;
+  text-align: center;
+  position: fixed;
+  border-top: 8px solid rgb(167, 196, 188);
+}
+
+/****LIFESTYLE CONTENTS****/
+.lifeContainer {
+  width: 100%;
+  height: 80%;
+  padding: (0, 20, 0, 20);
+}
+
+.divlifeOne {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(94, 139, 126);
+  float: left;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.divlifeOne > p,
+.divlifeThree > p {
+  color: rgb(167, 196, 188);
+  font-family: "Nanum Gothic Coding", monospace;
+}
+.divlifeTwo {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(167, 196, 188);
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.divlifeTwo > p,
+.divlifeFour > p {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.divlifeThree {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(94, 139, 126);
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  color: rgb(167, 196, 188);
+}
+.divlifeFour {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(167, 196, 188);
+  overflow: hidden;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+/*********BUSINESS CONTENTS
+.busiContainer {
+  width: 100%;
+  height: 80%;
+  padding: (0, 20, 0, 20);
+}
+
+.divbusiOne {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(94, 139, 126);
+  float: left;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.divbusiOne > p,
+.divbusiThree > p {
+  color: rgb(167, 196, 188);
+  font-family: "Nanum Gothic Coding", monospace;
+}
+.divbusiTwo {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(167, 196, 188);
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.divbusiTwo > p,
+.divbusiFour > p {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.divbusiThree {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(94, 139, 126);
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  color: rgb(167, 196, 188);
+}
+.divbusiFour {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(167, 196, 188);
+  overflow: hidden;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+*********/
+
+
+
+
+/*********BUSINESS CSS*********/
+
+.BusiContainer
+{
+  width:90%;
+  height:500px;
+  margin-left:3%;
+  margin-top:2%;
+  padding-top:5px;
+  padding-left:40px;
+  padding:30px;
+  overflow:hidden;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+.section1, .section3
+{
+  width:30%;
+  background-color:rgb(198, 242, 230);
+  padding:5px;
+  margin-bottom:10px;
+  overflow:hidden;
+  float:left;
+  color:black;
+  height:490px;
+}
+.section2
+{
+  width:33%;
+  padding:10px;
+  overflow:hidden;
+  float:left;
+  font-family: 'Nanum Gothic Coding', monospace;
+  color:black;
+}
+.bar
+{
+  border:2px solid rgb(47, 93, 98);
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.BusiContainer a
+{
+  text-decoration:none;
+  color:rgb(94, 139, 126);
+
+}
+
+
+.BusiContainer a:hover
+{
+  /*color:rgb(47, 93, 98);*/
+  color:darkgreen;
+  font-weight:bold;
+}
+.article1, .article2, .article3
+{
+  text-align:justify;
+  font-size:10px;
+}
+
+
+
+.articleTitle
+{
+  font-size:30px;
+  font-weight:bold;
+  font-family: 'Syncopate', sans-serif;
+}
+
+
+
+
+
+/*********SPORT CONTENTS*********/
+.sportsContainer {
+  width: 100%;
+  height: 80%;
+  padding: (0, 20, 0, 20);
+}
+
+.divSportsOne {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(94, 139, 126);
+  float: left;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.divSportsOne > p,
+.divSportsThree > p {
+  color: rgb(167, 196, 188);
+  font-family: "Nanum Gothic Coding", monospace;
+}
+.divSportsTwo {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(167, 196, 188);
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.divSportsTwo > p,
+.divSportsFour > p {
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.divSportsThree {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(94, 139, 126);
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  color: rgb(167, 196, 188);
+}
+.divSportsFour {
+  width: 22%;
+  height: 80%;
+  background-color: rgb(167, 196, 188);
+  overflow: hidden;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+/* This div design part is
+            used as an Image */
+.round {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  float: left;
+  font-weight: bold;
+
+  /* Change the shape according
+    to the image */
+  shape-outside: circle();
+  background-color: lightgray;
+  color: white;
+}
+article {
+  padding-top: 80px;
+  display: inline-block;
+}
+
+.sportsTitle /*Title of Sports Article*/ {
+  font-size: 30px;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.lifeTitle /*Title of Lifestyle Article*/ {
+  font-size: 30px;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.busiTitle /*Title of Business Article*/ {
+  font-size: 30px;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.buton {
+  border-radius: 5px 25px;
+  background-color: white;
+  font-size: 12px;
+  width: 130px;
+  height: 20px;
+  margin-left: 150px;
+  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  padding-top: 2px;
+}
+
+.sport > a > p {
+  font-size: 12px;
+  color: black;
+}
+
+/********ABOUT US CSS********/
+
+.container_about {
+  width: 90%;
+  height: 500px;
+  background-color: rgba(198, 242, 230, 0.774);
+  margin-left: 2%;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+.container_about p {
+  font-size: 18px;
+  font-family: "Nanum Gothic Coding", monospace;
+  color: rgb(47, 93, 98);
+}
+
+.left_about {
+  width: 25%;
+  background-color: white;
+  margin-left: 20px;
+  height: 480px;
+  float: left;
+  overflow: hidden;
+}
+
+.center_about {
+  width: 40%;
+  height: 500px;
+  padding-left: 15px;
+  padding-right: 20px;
+  overflow: hidden;
+  float: left;
+  text-align: justify;
+}
+
+.right_about {
+  width: 28%;
+  background-color: rgba(223, 238, 234, 0.714);
+  height: 490px;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.comA img {
+  display: inline-block;
+  padding-right: 10px;
+  float: left;
+  padding-bottom: 10px;
+}
+
+.comB {
+  text-align: center;
+  font-weight: bold;
+}
+
+/********CONTACT US CSS********/
+.container_con {
+  width: 95%;
+  height: 500px;
+  background-color: rgba(198, 242, 230, 0.774);
+  margin-left: 1.5%;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.conText {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  color: rgb(47, 93, 98);
+}
+.con_formContainer {
+  margin-left: 20px;
+  background-color: rgb(167, 196, 188);
+  width: 50%;
+  padding: 20px;
+  margin-right: 15px;
+  height: 420px;
+  float: left;
+  overflow: hidden;
+}
+
+.con_form label {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(47, 93, 98);
+  font-family: "Nanum Gothic Coding", monospace;
+}
+.conSubmit {
+  margin-left: 40%;
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+}
+
+.right_about > p {
+  padding-bottom: 10px;
+}
+
+/*OTHERS*/
+.con_others {
+  float: left;
+  overflow: hidden;
+  width: 35%;
+  background-color: rgba(198, 242, 230, 0.774);
+  padding: 10px;
+  height: 420px;
+}
+
+.con_social {
+  width: 80%;
+  margin-left: 60px;
+}
+
+.con_socialFb,
+.con_socialTwit,
+.con_socialInsta {
+  width: 20%;
+  float: left;
+}
+.con_socialFb {
+  margin-right: 58px;
+  padding-top: 10px;
+}
+.con_socialTwit {
+  margin-right: 80px;
+}
+.con_socialInsta {
+  margin-top: 10px;
+}
+
+/*MAP*/
+.con_map {
+  clear: both;
+}
+.conMaptext {
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(47, 93, 98);
+  font-family: "Nanum Gothic Coding", monospace;
+  text-align: center;
+}
+.con_map iframe {
+  padding-left: 20px;
+}
+
+.content {
+  contain: content;
+}
